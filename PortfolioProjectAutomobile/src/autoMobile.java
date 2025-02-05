@@ -1,5 +1,5 @@
 
-public class Automobile {
+public class autoMobile {
 
 		//Automobile Variables
 	private String make; 
@@ -9,6 +9,15 @@ public class Automobile {
 	private int mileage;
 	private int vinNumber;
 	
+	//Automobile Constructor
+	public autoMobile (int vinNumber, String make, String model, String color, int year, int mileage) {
+			this.vinNumber = vinNumber;
+			this.make = make;
+			this.model = model;
+			this.color = color;
+			this.year = year;
+			this.mileage = mileage;	
+		}
 	
 	//getters 
 	
@@ -35,14 +44,7 @@ public class Automobile {
 				"Year: " + year + "\n" + "Mileage: " + mileage; 
 	}	
 	
-	//Automobile Constructor
-	public Automobile (String make, String model, String color, int year, int mileage) {
-		this.make = make;
-		this.model = model;
-		this.color = color;
-		this.year = year;
-		this.mileage = mileage;	
-	}
+	
 	
 	
 	
