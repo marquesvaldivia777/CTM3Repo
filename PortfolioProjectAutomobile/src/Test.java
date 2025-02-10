@@ -5,23 +5,25 @@ import java.util.Scanner;
 public class Test {
 
 	public static void main(String[] args) {
-		Scanner scnr = new Scanner (System.in);
+		//Scanner scnr = new Scanner (System.in);
 	
 	
 		autoMobile bmw = new autoMobile();
-		autoMobile lexus = new autoMobile ();
+		//autoMobile lexus = new autoMobile ();
 		
 		
 		inventory Vehicles = new inventory();
 		
 		
 		Vehicles.addVehicle(bmw);
+		//Vehicles.updateVehicle(bmw);
+		
 		//Vehicles.addVehicle(lexus);
 		
 		//Vehicles.removeVehicle(bmw);		
 		
 		
-		//System.out.println(Vehicles);
+		
 		
 		
 			System.out.println("Do you want to print information to file: y/n ");
@@ -31,7 +33,7 @@ public class Test {
 			if (x == "y") {
 			try {
 				FileWriter writer = new FileWriter("Home.txt");
-				writer.write("Roses are red");
+				writer.write(Vehicles.toString());
 				writer.close();
 				
 			}
@@ -42,6 +44,8 @@ public class Test {
 			}
 		
 			else {System.out.println("Okay");}
+			
+			System.out.println(Vehicles);
 		
 		
 		
