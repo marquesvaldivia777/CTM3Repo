@@ -19,6 +19,17 @@ public class autoMobile {
 			this.mileage = mileage;	
 		}
 	
+	//default constructor 
+	public autoMobile () {
+		this.vinNumber = 0;
+		this.make = null;
+		this.model = null;
+		this.color = null;
+		this.year = 0;
+		this.mileage = 0;	 
+				
+	}
+	
 	//getters 
 	
 	public String getMake() {return make; }
@@ -41,9 +52,8 @@ public class autoMobile {
 	
 	public String toString () {
 		return "VIN number: " + vinNumber + "\n" + "Make: " + make + "\n" + "Model: " + model + "\n" + "Color: " + color + "\n" + 
-				"Year: " + year + "\n" + "Mileage: " + mileage; 
+				"Year: " + year + "\n" + "Mileage: " + mileage + "\n"; 
 	}	
-	
 	
 	
 	
